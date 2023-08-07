@@ -1,0 +1,17 @@
+<h2 class="h2-tag text-center">Books</h2>
+<ul>
+  <li *ngFor="let book of myBooks">
+    <button type="button" class="my-2 w-full flex" (click)="onSelect(book)">
+      <span id="year" class="p-2 bg-black text-white rounded-l-md olb">{{
+        book.year
+      }}</span>
+      <span
+        id="title-author"
+        class="p-2 rounded-r-md olb hover:bg-blue-300 bg-blue-100 text-left flex-grow"
+        >{{ book.title }} - {{ book.author }}</span
+      >
+    </button>
+  </li>
+</ul>
+
+<app-book-select [book] = "selectedBook"></app-book-select>

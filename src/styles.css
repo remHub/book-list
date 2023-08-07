@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* In your custom CSS file */
+@layer utilities {
+  .h1-tag {
+    @apply text-4xl font-bold;
+  }
+  .h2-tag {
+    @apply text-3xl font-semibold;
+  }
+  .h3-tag {
+    @apply text-2xl font-semibold;
+  }
+  .h4-tag {
+    @apply text-xl font-medium;
+  }
+  .h5-tag {
+    @apply text-lg font-medium;
+  }
+  .h6-tag {
+    @apply text-base font-medium;
+  }
+}
+.olb {
+  @apply outline outline-1 outline-black
+}
+.olr {
+  @apply outline outline-1 outline-red-500
+}
+.olg {
+  @apply outline outline-1 outline-green-500
+}

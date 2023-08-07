@@ -1,0 +1,16 @@
+<div class="p-1 flex flex-col" *ngIf="book">
+  <h2 class="h2-tag">{{ book.title | uppercase }}</h2>
+  <div>
+    <span>Year: </span>
+    {{ book.year }}
+  </div>
+  <div>
+    <label for="title" class="pr-2">Book Title</label>
+    <input
+      type="text"
+      id="title"
+      class="flex-grow px-2 py-1 rounded-md"
+      [(ngModel)]="book.title"
+    />
+  </div>
+</div>
